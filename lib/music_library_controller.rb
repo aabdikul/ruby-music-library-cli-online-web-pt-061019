@@ -79,7 +79,7 @@ end
 def play_song
   user_input = nil
   puts "Which song number would you like to play?"
-  self.list_songs
+#  self.list_songs
   user_input = gets.strip
   if Song.all.length > user_input.to_i
     sorted_list = Song.all.sort_by {|object| object.name}
