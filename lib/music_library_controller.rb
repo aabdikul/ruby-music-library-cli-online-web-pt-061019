@@ -79,7 +79,7 @@ end
 def play_song
   user_input = nil
   puts "Which song number would you like to play?"
-#  array = self.list_songs
+  array = self.list_songs
   user_input = gets.strip
 #  array.each do |full_name|
 #    new_array = full_name.split(". ")
