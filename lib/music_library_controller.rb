@@ -81,7 +81,7 @@ def play_song
   puts "Which song number would you like to play?"
 #  self.list_songs
   user_input = gets.strip
-  if Song.all.length > user_input.to_i
+  if Song.all.length > user_input.to_i && user_input.to_i >= 1
     sorted_list = Song.all.sort_by {|object| object.name}
 #  array.each do |full_name|
 #    new_array = full_name.split(". ")
