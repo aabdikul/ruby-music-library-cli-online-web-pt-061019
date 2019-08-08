@@ -91,7 +91,6 @@ def play_song
   end
 #  end
 end
-
-
-
 end
+
+list_songs
