@@ -31,6 +31,10 @@ def list_songs
     puts "#{number.to_i + 1}. #{song_object.artist.name} - #{song_object.name} - #{song_object.genre.name}"
 #    second_array << "#{number.to_i + 1}. #{song_object.artist.name} - #{song_object.name} - #{song_object.genre.name}"
   end
+  new_input = nil
+  while new_input != "exit"
+    self.list_songs
+    input = gets.strip
 #  return second_array
 end
 
@@ -89,8 +93,6 @@ def play_song
 #    if user_input == number
     puts "Playing #{sorted_list[user_input.to_i - 1].name} by #{sorted_list[user_input.to_i - 1].artist.name}"
   end
-#  end
-end
 end
 
-list_songs
+end
