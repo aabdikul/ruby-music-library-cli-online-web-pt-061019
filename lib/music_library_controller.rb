@@ -20,6 +20,9 @@ def call
   puts "To quit, type 'exit'."
   puts "What would you like to do?"
   input = gets.strip
+  if input == "list songs"
+    self.list_songs
+  end
 end
 end
 
@@ -31,10 +34,6 @@ def list_songs
     puts "#{number.to_i + 1}. #{song_object.artist.name} - #{song_object.name} - #{song_object.genre.name}"
 #    second_array << "#{number.to_i + 1}. #{song_object.artist.name} - #{song_object.name} - #{song_object.genre.name}"
   end
-  new_input = nil
-  while new_input != "exit"
-    self.list_songs
-    input = gets.strip
 #  return second_array
 end
 
