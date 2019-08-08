@@ -89,7 +89,7 @@ def play_song
 #    number = new_array[0]
 #    if user_input == number
     puts "Playing #{sorted_list[user_input - 1].name} by #{sorted_list[user_input - 1].artist.name}"
-#    end
+  end
 #  end
 end
 
