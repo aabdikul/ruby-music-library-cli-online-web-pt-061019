@@ -83,7 +83,7 @@ def play_song
   user_input = gets.strip
   if Song.all.length > user_input.to_i
     sorted_list = Song.all.sort_by {|object| object.name}
-    sorted_list[user_input - 1]
+    sorted_list
 #  array.each do |full_name|
 #    new_array = full_name.split(". ")
 #    number = new_array[0]
